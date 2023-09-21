@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.container {
+    margin: 20px auto;
+    width: 1000px;
+    height: 600px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.container .circle {
+    margin: 50px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.container .pick_color .title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container .pick_color .buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container .pick_color .buttons .button {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #424141cc;
+}
