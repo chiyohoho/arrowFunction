@@ -135,16 +135,17 @@ const showSearchColor = () => {
 
         if (findNumber !== -1 && findNumber <= colorList.length) {
             showContentNumber.textContent = `Number ${numberSearch} `;
+            showContentNumber.style.color = "black";
             showContentCode.textContent = `Color code : ${colorList[findNumber].bg}`;
             showContentCode.style.color = colorList[findNumber].bg
             showContentCode.style.visibility = "visible"
+
         } else {
             showContentNumber.textContent = `We only have ${colorList.length} in the Color List, please try again with number from 1 to ${colorList.length}`;
             showContentNumber.style.color = "red";
             showContentCode.style.visibility = "hidden"
         }
         showContent.style.visibility = "visible";
-        showContentNumber.style.color = "black"
     } else {
         showContent.style.visibility = "visible";
         showContentNumber.textContent = "Please enter any number";
